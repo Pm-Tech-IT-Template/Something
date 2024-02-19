@@ -1,0 +1,40 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+main()
+{
+int menu =0;
+float cost =0;
+printf("Menu\n");
+printf("1. Hamburger 19 Baht\n");
+printf("2. Cheeseburger 25 Baht\n");
+printf("3. Fishburger 25 Baht\n");
+printf("4. Coke 15 Baht\n");
+printf("5. Fanta 15 Baht\n");
+printf("6. French Fires 12 Baht\n");
+printf("7. End \n");
+printf("\n");
+while (menu !=7 )
+{
+printf("Enter Menu 1 -7 : ");
+scanf("%d",&menu);
+switch (menu)
+{
+case 1 :cost +=19;
+break;
+case 2 :cost +=25;
+break;
+case 3 :cost +=25;
+break;
+case 4 :cost +=15;
+break;
+case 5 :cost +=15;
+break;
+case 6 :cost +=12;
+break;
+}
+}
+printf("\n");
+printf("Cost = %.2f\n",cost);
+printf("Tax = %.2f\n",cost*10/100);
+return 0;
+}

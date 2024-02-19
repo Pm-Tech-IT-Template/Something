@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    double width, height, area;
+    printf("กรุณากรอกความกว้างของสี่เหลี่ยมผืนผ้า : ");
+    scanf("%lf", &width);
+    printf("กรุณากรอกความยาวของสี่เหลี่ยมผืนผ้า : ");
+    scanf("%lf", &height);
+    area = width * height;
+    printf("พื้นที่สี่เหลี่ยมพื้นผ้า เท่ากับ %.2lf x %.2lf = %.2lf", width, height, area);
+    return 0;
+}
